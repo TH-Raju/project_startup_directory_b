@@ -2,32 +2,32 @@ import mongoose from "mongoose";
 import {  Schema } from "mongoose";
 
 let startupSchema = new Schema({
-  date: {
+  Date: {
     type: String,
   },
-  startupName: {
+  StartupName: {
     type: String,
   },
-  industryVertical: {
+  IndustryVertical: {
     type: String,
   },
-  subVertical: {
+  SubVertical: {
     type: String,
   },
-  cityLocation: {
+  CityLocation: {
     type: String,
   },
-  investorsName: {
+  InvestorsName: {
     type: String,
   },
-  investmentType: {
+  InvestmentType: {
     type: String,
   },
-  amountInUSD: {
+  AmountInUSD: {
     type: String,
     required: false,
   },
-  remarks: {
+  Remarks: {
     type: String,
     required: false,
   },
