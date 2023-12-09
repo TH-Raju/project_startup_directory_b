@@ -9,7 +9,7 @@ app.use(cors());
 app.use(json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use("/api/v1/", startupRoutes);
+app.use("/api/v1/startup", startupRoutes);
 
 app.get("/", (req, res) => {
   res.send("Server working....");

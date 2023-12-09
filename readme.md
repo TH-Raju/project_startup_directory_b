@@ -1,1 +1,1 @@
-- /api/v1/add (POST)
+- /api/v1/startup/add (POST)

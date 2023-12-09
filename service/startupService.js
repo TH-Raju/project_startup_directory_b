@@ -12,4 +12,5 @@ const getStartup = async () => {
 
 export const startupService = {
   addStartup,
+  getStartup,
 };

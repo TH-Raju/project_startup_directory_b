@@ -14,6 +14,21 @@ let addStartup = async (req, res) => {
   }
 };
 
+let getStartup = async (req, res) => {
+  try {
+    const getstartup = await startupService.getStartup();
+    let data = {
+      success: true,
+      status: 200,
+      getstartup,
+    };
+    res.send(data);
+  } catch (err) {
+    console.log(err);
+  }
+};
+
 export const startupController = {
   addStartup,
+  getStartup,
 };
