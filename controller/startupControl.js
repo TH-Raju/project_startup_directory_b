@@ -28,7 +28,23 @@ let getStartup = async (req, res) => {
   }
 };
 
+let searchTerm = async (req, res) => {
+  try {
+    let search = req.query.searchTerm;
+    const searchData = await startupService.searchTerm(search);
+    let data = {
+      success: true,
+      status: 200,
+      searchData,
+    };
+    console.log(data);
+  } catch (err) {
+    console.log(err);
+  }
+};
+
 export const startupController = {
   addStartup,
   getStartup,
+  searchTerm,
 };

@@ -1,1 +1,3 @@
+- /api/v1/startup/ (GET)
 - /api/v1/startup/add (POST)
+- /api/v1/startup/search?searchTerm=Technology (GET)
