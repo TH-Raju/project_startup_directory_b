@@ -37,7 +37,7 @@ let searchTerm = async (req, res) => {
       status: 200,
       searchData,
     };
-    console.log(data);
+    res.send(data);
   } catch (err) {
     console.log(err);
   }

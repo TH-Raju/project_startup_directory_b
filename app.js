@@ -5,7 +5,13 @@ import { startupRoutes } from "./routes/startup.route.js";
 const json = express.json;
 const app = express();
 
-app.use(cors());
+const corsConfig = {
+  origin: "*",
+  credentials: true,
+  methods: ["GET", "POST", "PATCH", "PUT", "DELETE"],
+};
+
+app.use(cors(corsConfig));
 app.use(json());
 app.use(express.urlencoded({ extended: true }));
 
